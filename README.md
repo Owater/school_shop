@@ -2,7 +2,8 @@
 校园购物
 
 # Screenshots
-![Main screen](/screenshots/main.jpg)
+![Main screen](/screenshots/main.png)
+![Main screen](/screenshots/main_menu.png)
 
 # Third-party libraries used
 
