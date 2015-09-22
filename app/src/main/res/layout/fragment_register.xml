@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_10"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginBottom="@dimen/space_10"
+        android:background="@drawable/editor_while_bg"
+        android:maxLines="1"
+        android:padding="@dimen/space_10"
+        android:singleLine="true"
+        android:hint="昵称"
+        android:textColor="@color/text_light_gray" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:background="@drawable/editor_while_bg"
+        android:maxLines="1"
+        android:padding="@dimen/space_10"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:textColor="@color/text_light_gray" />
+
+    <EditText
+        android:id="@+id/rePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_20"
+        android:background="@drawable/editor_while_bg"
+        android:maxLines="1"
+        android:padding="@dimen/space_10"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:hint="确认密码"
+        android:textColor="@color/text_light_gray" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_solid_selector"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginBottom="@dimen/space_20"
+        android:text="注册"/>
+
+</LinearLayout>

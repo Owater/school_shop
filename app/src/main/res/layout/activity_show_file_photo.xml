@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/albumback"
+    android:orientation="vertical" >
+
+   <include layout="@layout/toolbar"/>
+
+    <GridView
+        android:id="@+id/showfilephoto_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/showfillephoto_bottom_layout"
+        android:layout_below="@+id/mytoolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/albumback"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp" />
+
+    <ProgressBar
+        android:id="@+id/showallphoto_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</LinearLayout>

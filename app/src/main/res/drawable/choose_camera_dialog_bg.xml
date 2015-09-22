@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <solid android:color="@color/white" />
+    
+    <item android:state_selected="true" android:drawable="@color/choose_pic_title" />
+    <item android:state_pressed="true" android:drawable="@color/choose_pic_title" />
+    <item android:state_focused="true" android:drawable="@color/choose_pic_title" />
+    <item android:drawable="@color/white" />
+
+</shape>

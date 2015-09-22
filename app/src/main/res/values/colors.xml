@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#fff2eeec</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dark_red">#ffe45639</color>
+    <color name="red">#FF0000</color>
+    <color name="light_red">#ffff4242</color>
+    <color name="font_gray">#999999</color>
+    <color name="gray">#ff999999</color>
+    <!-- 状态栏 -->
+    <color name="statusbar_bg">#0089E4</color>
+    <color name="btn_dis">#81BAFF</color>
+    <color name="fuxk_settle_black_mark">#1A000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <!-- 输入框 -->
+    <color name="input_padding_bg">#dbd8d8</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="white">#ffffffff</drawable>
+    
+    <!-- 选择图片框标题栏 -->
+    <color name="choose_pic_title">#E1E0DE</color>
+    <color name="choose_title_text_color">#333333</color>
+    
+    <!-- 上传图片添加的颜色 -->
+    <color name="albumback">#E1E0DE</color>
+    <color name="none_color">#00000000</color>
+    <!-- 主要的灰色线条颜色 -->
+    <color name="line">#F0F0F0</color>
+    <!-- Tab -->
+    <color name="statusbar_tab_text">#7EC5F0</color>
+    <color name="comment_divider">#666667</color>
+    <color name="font_black_content">#222222</color>
+    <color name="divide_15_e5">#ffe5e5e5</color>
+    <color name="divide_line_color">#dddddd</color>
+    <color name="white_pressed">#ffdfdfdf</color>
+    
+    <color name="reply_theme_content">#ebf6fc</color>
+    <!-- 字体颜色 -->
+    <color name="font_black_comment">#ff666666</color>
+    <color name="text_light_gray">#666465</color>
+    <color name="text_black">#252525</color>
+    <color name="reply_theme_content_text">#666465</color>
+    <color name="goods_detail_username">#9e6142</color>
+    <color name="goods_detail_price">#fe785f</color>
+    
+    <!-- CirclePageIndicator -->
+    <color name="circlePageIndicator_fillColor">#9ade0f</color>
+    <color name="circlePageIndicator_strokeColor">#FFFFFF</color>
+    
+    <!-- Chat -->
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#dbd8d8</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <!-- #Chat END-->
+    
+    <!-- progressbar -->
+    <color name="progressbar_second">#ffab15</color>
+    <color name="progressbar">#caceca</color>
+    
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="blue_btn_bg">#27ADE7</color>
+    <color name="blue_btn_pressed_bg">#0289C6</color>
+    <color name="blue_disable_bg">#787878</color>
+    
+</resources>

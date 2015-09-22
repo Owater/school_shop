@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.siso.app.widget.PagerSlidingTabStrip
+        android:id="@+id/market_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" >
+    </com.siso.app.widget.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/market_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/market_tabs" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

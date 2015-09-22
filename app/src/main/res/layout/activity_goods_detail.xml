@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.siso.app.ui.GoodsDetailActivity" >
+
+    <ListView
+        android:id="@+id/goodsdetail_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/view_bottom_edit"
+        android:background="@null"
+        android:clipToPadding="true" />
+    
+    <include layout="@layout/toolbar" />
+    
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        layout="@layout/view_emojicon_edittext" />
+
+</RelativeLayout>

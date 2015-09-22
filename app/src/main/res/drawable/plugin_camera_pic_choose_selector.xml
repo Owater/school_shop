@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:drawable="@drawable/camera_choose_bg" Android:state_checked="true"/>
+    <item Android:drawable="@color/none_color"/>
+</selector>

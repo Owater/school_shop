@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <com.siso.app.widget.CircleImageView
+        android:id="@+id/item_reply_comment_avatar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="1dp" >
+
+            <TextView
+                android:id="@+id/item_reply_comment_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/text_light_gray"
+                android:text="用户名称" />
+
+            <TextView
+                android:id="@+id/item_reply_comment_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="4-07"
+                android:textSize="@dimen/text_size_10" />
+        </RelativeLayout>
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/item_reply_comment_comment"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:text="评论" />
+
+        <TextView
+            android:id="@+id/item_reply_comment_theme"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_12"
+            android:background="@color/reply_theme_content"
+            android:textColor="@color/reply_theme_content_text"
+            android:padding="4dp"
+            android:text="评论了我的主题:XX" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_goods_detail_desp_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/goods_detail_padding"
+        android:paddingRight="@dimen/goods_detail_padding"
+        android:paddingTop="@dimen/goods_detail_padding"
+        android:text="商品标题"
+        android:textColor="@color/text_black" />
+
+    <TextView
+        android:id="@+id/item_goods_detail_desp_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/goods_detail_padding"
+        android:paddingRight="@dimen/goods_detail_padding"
+        android:text="12 元"
+        android:textColor="@color/goods_detail_price" />
+
+    <TextView
+        android:id="@+id/item_goods_detail_desp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/goods_detail_padding"
+        android:text="商品描述" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/goods_detail_padding" >
+
+        <com.siso.app.widget.CircleImageView
+            android:id="@+id/item_goods_desp_avatar"
+            android:layout_width="@dimen/small_avatar"
+            android:layout_height="@dimen/small_avatar"
+            android:src="@drawable/ic_avatar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/item_goods_detail_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="用户名称"
+                    android:textColor="@color/goods_detail_username" />
+
+                <TextView
+                    android:id="@+id/item_goods_detail_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="时间"
+                    android:textSize="@dimen/text_size_10" />
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/item_goods_detail_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/icon_chat"/>
+                <ImageButton 
+                    android:id="@+id/item_goods_detail_call"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/icon_call"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divide_15_top_bottom" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/item_goods_banner" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/item_goods_detail_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_goods_banner" />
+
+    <com.siso.app.widget.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:fillColor="@color/circlePageIndicator_fillColor"
+        app:strokeColor="@color/circlePageIndicator_strokeColor"
+        android:padding="10dip" />
+
+</RelativeLayout>

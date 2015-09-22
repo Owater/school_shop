@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/divide_15_top_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/setting_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:minHeight="48dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="帐号设置"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        
+        <include layout="@layout/divide_15_top_bottom" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:id="@+id/feedback">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="意见反馈"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/list_divider_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:id="@+id/aboutus">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="@string/title_activity_about"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        
+        <include layout="@layout/divide_15_top_bottom" />
+        
+        <Button
+            android:id="@+id/loginOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/setting_button_esc"
+            android:text="退出"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>

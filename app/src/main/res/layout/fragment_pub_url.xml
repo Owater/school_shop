@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/share_pub_bottom"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_publish_guide_web" />
+
+    <LinearLayout
+        android:id="@+id/share_pub_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/space_10"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/share_pub_link_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <EditText
+                android:id="@+id/share_pub_link_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:autoText="true"
+                android:background="@drawable/dg_link_editor_background"
+                android:layout_toLeftOf="@+id/share_pub_edit_clear"
+                android:layout_alignParentLeft="true"
+                android:ems="15"
+                android:gravity="start"
+                android:hint="@string/share_pub_edit_link_hint"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:id="@+id/share_pub_edit_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:scaleType="center"
+                android:src="@drawable/clear_search_text_image" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/share_pub_get"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_red_solid_selector"
+            android:padding="@dimen/space_8"
+            android:text="@string/share_pub_edit_link_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/pub_url_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/space_20"
+        android:visibility="gone">
+        
+        <TextView 
+            android:id="@+id/pub_url_error_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_20"/>
+        
+        <Button
+            android:id="@+id/share_pub_I_know"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_solid_selector"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/space_8"
+            android:text="@string/share_pub_I_know"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

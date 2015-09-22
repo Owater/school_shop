@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.siso.app.ui.MarketPubActivity" >
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_pub_category"
+                    android:textSize="@dimen/text_size_18" />
+
+                <Spinner
+                    android:id="@+id/market_pub_category_spinner"
+                    style="@style/Toolbar.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/market_pub_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/market_pub_edit_margin_bottom"
+                android:background="@drawable/dg_link_editor_background"
+                android:hint="@string/market_pub_title"
+                android:padding="@dimen/market_pub_edit_padding"
+                android:textSize="@dimen/market_pub_edit_textSize" />
+
+            <EditText
+                android:id="@+id/market_pub_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/market_pub_edit_margin_bottom"
+                android:background="@drawable/dg_link_editor_background"
+                android:hint="@string/market_pub_name"
+                android:padding="@dimen/market_pub_edit_padding"
+                android:textSize="@dimen/market_pub_edit_textSize" />
+
+            <EditText
+                android:id="@+id/market_pub_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/market_pub_edit_margin_bottom"
+                android:background="@drawable/dg_link_editor_background"
+                android:hint="@string/market_pub_price"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/market_pub_edit_padding"
+                android:textSize="@dimen/market_pub_edit_textSize" />
+
+            <EditText
+                android:id="@+id/market_pub_contactPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/market_pub_edit_margin_bottom"
+                android:background="@drawable/dg_link_editor_background"
+                android:hint="@string/market_pub_contactphone"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/market_pub_edit_padding"
+                android:textSize="@dimen/market_pub_edit_textSize" />
+
+            <EditText
+                android:id="@+id/market_pub_describe"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_marginBottom="@dimen/market_pub_edit_margin_bottom"
+                android:background="@drawable/dg_link_editor_background"
+                android:gravity="start"
+                android:hint="@string/market_pub_describe"
+                android:padding="@dimen/market_pub_edit_padding"
+                android:textSize="@dimen/market_pub_edit_textSize" />
+
+            <GridView
+                android:id="@+id/market_ImgGridview"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

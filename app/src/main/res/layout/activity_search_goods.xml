@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/search_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="@color/input_padding_bg"
+        android:padding="@dimen/space_5" >
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:background="@drawable/comment_input"
+            android:hint="@string/search_edit_hint"
+            android:padding="@dimen/space_5" >
+            <requestFocus />
+            </EditText>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_5"
+            android:background="@drawable/chat_send_btn_selector"
+            android:text="@string/action_search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_40"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/search_loading"
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:indeterminateDuration="2000" />
+
+        <TextView
+            android:id="@+id/progressBar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_10"
+            android:text="@string/hint_loading" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

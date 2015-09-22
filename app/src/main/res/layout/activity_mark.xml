@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/mark_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/mark_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mark_toolbar" >
+
+        <ImageView
+            android:id="@+id/mark_imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#eeffffff"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:id="@+id/addTagContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/mark_imageView"
+            android:layout_alignTop="@+id/mark_imageView" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/brarnd_tag_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brand_tag_point_white_bg"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/mark_listViewParent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#55666666"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/search_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#eee"
+                android:padding="8dip" >
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/search_tag_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/comment_input"
+                    android:hint="@string/search_brand_list_hint"
+                    android:paddingLeft="30dip"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/search_brand_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/search_tag_brand"
+                    android:background="#eee"
+                    android:text="@string/search_brand_cancel_btn"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/mark_tab_choose_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

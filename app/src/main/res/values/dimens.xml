@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_23">23.0sp</dimen>
+    <dimen name="text_size_22">22.0sp</dimen>
+    <dimen name="text_size_21">21.0sp</dimen>
+    <dimen name="text_size_20">20.0sp</dimen>
+    <dimen name="text_size_19">19.0sp</dimen>
+    <dimen name="text_size_18">18.0sp</dimen>
+    <dimen name="text_size_17">17.0sp</dimen>
+    <dimen name="text_size_16">16.0sp</dimen>
+    <dimen name="text_size_15">15.0sp</dimen>
+    <dimen name="text_size_14">14.0sp</dimen>
+    <dimen name="text_size_13">13.0sp</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
+    <dimen name="text_size_11">11.0sp</dimen>
+    <dimen name="text_size_10">10.0sp</dimen>
+    <dimen name="text_size_9">9.0sp</dimen>
+    <dimen name="text_size_8">8.0sp</dimen>
+    <dimen name="text_size_7">7.0sp</dimen>
+    <dimen name="text_size_6">6.0sp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="space_2">2.0dp</dimen>
+    <dimen name="space_3">3.0dp</dimen>
+    <dimen name="space_4">4.0dp</dimen>
+    <dimen name="space_5">5.0dp</dimen>
+    <dimen name="space_8">8.0dp</dimen>
+    <dimen name="space_10">10.0dp</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_20">20.0dip</dimen>
+    <dimen name="space_30">30.0dip</dimen>
+    <dimen name="space_40">40.0dp</dimen>
+    <dimen name="space_45">45.0dp</dimen>
+    <dimen name="space_50">50.0dp</dimen>
+    
+    <dimen name="choose_dialog_padding_left">10dp</dimen>
+    <!-- 商品列表高度 -->
+    <dimen name="marketList_item_height">115dp</dimen>
+    <dimen name="marketList_item_img_height">110dp</dimen>
+    <dimen name="small_avatar">35dp</dimen>
+    <dimen name="small_avatar_shadow">36.5dp</dimen>
+    <dimen name="goods_detail_padding">10dp</dimen>
+    <dimen name="market_pub_edit_margin_bottom">10.0dp</dimen>
+    <dimen name="market_pub_edit_padding">8.0dp</dimen>
+    <dimen name="market_pub_edit_textSize">16.0sp</dimen>
+    
+    <!-- floating_action_button -->
+    <dimen name="floating_action_button_size_normal">56dp</dimen>
+    <dimen name="floating_action_button_size_mini">40dp</dimen>
+    <dimen name="floating_action_button_elevation">4dp</dimen>
+    <dimen name="floating_action_button_shadow_radius">6dp</dimen>
+    <dimen name="floating_action_button_margin_normal">34dp</dimen>
+    <dimen name="floating_action_button_margin_normal_minus">-34dp</dimen>
+    <dimen name="floating_action_button_margin_mini">26dp</dimen>
+    <dimen name="floating_action_button_margin_mini_minus">-26dp</dimen>
+    
+    <dimen name="share_pub_edit_padding">10.0dp</dimen>
+    <dimen name="share_pub_margin_top">10.0dp</dimen>
+    
+    <dimen name="tag_margin">0.0dp</dimen>
+    <dimen name="tag_margin1">6.0dp</dimen>
+    
+    <dimen name="find_list_padding">10.0dp</dimen>
+    
+    <!-- Chat -->
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <!-- #Chat END-->
+    
+    <dimen name="item_user_goods_margin">10.0dp</dimen>
+    <dimen name="item_user_goods_img">150.0dp</dimen>
+    
+    <dimen name="item_goods_banner">300.0dp</dimen>
+    <dimen name="pickImg_foldIcon">80dp</dimen>
+    <dimen name="splash_icon">80dp</dimen>
+    <dimen name="login_btn_radius">3.0dp</dimen>
+    <dimen name="register_guide_img">15.0dp</dimen>
+
+</resources>

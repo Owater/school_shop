@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 商品类别选项 -->
+    <string-array name="goods_category_tabs">
+        <item>@string/title_marketListFragment_second</item>
+        <item>@string/title_marketListFragment_dbuy</item>
+        <item>@string/title_marketListFragment_rent</item>
+        <item>@string/title_marketListFragment_askbuy</item>
+        <item>@string/title_marketListFragment_other</item>
+    </string-array>
+    
+    <string-array name="sexs">
+        <item>男</item>
+        <item>女</item>
+        <item>保密</item>
+    </string-array>
+    
+    <string-array name="user_info_list_first">
+        <item>昵称</item>
+        <item>性别</item>
+        <item>学校</item>
+    </string-array>
+    
+    <string-array name="search_list">
+        <item>本校</item>
+        <item>附近</item>
+    </string-array>
+    
+    <string-array name="goods_status_change">
+        <item>修改价格</item>
+        <item>下架</item>
+        <item>删除</item>
+    </string-array>
+
+</resources>

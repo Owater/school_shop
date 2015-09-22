@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="250dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/forwrad_dialog_title_bg"
+        android:text="@string/market_choose_pic"
+        android:textColor="@color/choose_title_text_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/choose_dialog_padding_left"
+        android:textSize="18dp" />
+    
+    <ListView 
+        android:id="@+id/custom_dialog_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"/>
+
+</LinearLayout>

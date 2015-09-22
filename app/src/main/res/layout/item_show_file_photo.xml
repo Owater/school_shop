@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" >
+
+    <ImageView
+        android:id="@+id/item_filePhoto_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/camera_no_pictures"
+        android:scaleType="centerCrop" 
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+
+        <ToggleButton
+            android:id="@+id/item_filePhoto_toggle_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/plugin_camera_pic_choose_selector"
+            android:textOff="@null"
+            android:textOn="@null" />
+
+        <Button
+            android:id="@+id/item_filePhoto_choosedbt"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_file_photo_choosed"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

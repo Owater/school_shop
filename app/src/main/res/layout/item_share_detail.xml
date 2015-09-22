@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/space_5"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/item_share_detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/goods_detail_padding"
+        android:paddingRight="@dimen/goods_detail_padding"
+        android:paddingTop="@dimen/goods_detail_padding"
+        android:text="商品标题"
+        android:textColor="@color/text_black" />
+    
+    <TextView
+        android:id="@+id/item_share_detail_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/goods_detail_padding"
+        android:paddingRight="@dimen/goods_detail_padding"
+        android:text="12 元"
+        android:textColor="@color/goods_detail_price" />
+    
+    <TextView
+        android:id="@+id/item_share_detail_desp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/find_list_padding"
+        android:text="描述" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/find_list_padding" >
+
+        <com.siso.app.widget.CircleImageView
+            android:id="@+id/item_share_detail_avatar"
+            android:layout_width="@dimen/small_avatar"
+            android:layout_height="@dimen/small_avatar"
+            android:src="@drawable/ic_avatar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/item_share_detail_uname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="用户名称"
+                    android:textColor="@color/goods_detail_username" />
+
+                <TextView
+                    android:id="@+id/item_share_detail_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="5-14"
+                    android:textSize="@dimen/text_size_10" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/item_share_detail_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_red_solid_selector"
+                    android:text="@string/share_gogo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

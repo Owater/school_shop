@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView 
+        android:id="@+id/guide_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_15"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/guide_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_solid_selector"
+            android:padding="@dimen/space_5"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="立即体验"/>
+    </LinearLayout>
+    
+
+</RelativeLayout>

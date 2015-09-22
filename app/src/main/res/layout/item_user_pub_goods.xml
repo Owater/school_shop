@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/item_user_goods_margin"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_user_goods_img">
+        
+        <ImageView 
+            android:id="@+id/item_user_pub_img"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_img_loading"/>
+        
+        <TextView 
+            android:id="@+id/item_user_pub_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="￥45"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/item_user_pub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_5"
+        android:textColor="@color/goods_detail_username"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="标题"/>
+    
+    <TextView 
+        android:id="@+id/item_user_pub_desp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_5"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+    
+</LinearLayout>

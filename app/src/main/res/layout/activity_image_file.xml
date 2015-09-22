@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/albumback"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar"/>
+
+    <GridView
+        android:id="@+id/imageFile_act_fileGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mytoolbar"
+        android:layout_centerInParent="true"
+        android:background="@color/albumback"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

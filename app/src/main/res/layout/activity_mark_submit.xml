@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:padding ="@dimen/space_5" 
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar" >
+
+        <ImageView
+            android:id="@+id/mark_submit_imageView"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:background="#eeffffff"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/mark_submit_editext"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/space_5"
+            android:padding="@dimen/space_5"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dg_link_editor_background"
+            android:layout_toRightOf="@id/mark_submit_imageView" 
+            android:textSize="@dimen/text_size_13"
+            android:gravity="start"
+            android:hint="@string/mark_submit_hint"/>
+    </RelativeLayout>
+
+</RelativeLayout>

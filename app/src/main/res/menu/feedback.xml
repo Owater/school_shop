@@ -1,0 +1,11 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.siso.app.ui.FeedbackActivity">
+    <item
+        android:id="@+id/action_finish"
+        android:title="发送"
+        android:icon="@drawable/actionbar_send_icon"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

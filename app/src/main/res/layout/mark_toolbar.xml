@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/statusbar_bg"
+    android:id="@+id/mark_toolbar">
+    
+    <TextView 
+        android:id="@+id/mark_toolbar_first"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/space_5"
+        android:textColor="@color/white"
+        android:text="@string/mark_tool_pre"/>
+    
+    <TextView 
+        android:id="@+id/mark_toolbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"/>
+    
+    <TextView 
+        android:id="@+id/mark_toolbar_second"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:padding="@dimen/space_5"
+        android:text="@string/mark_tool_next"/>
+    
+
+</RelativeLayout>

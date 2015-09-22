@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/set_user_infovalue" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint=""
+        android:background="@drawable/edit"/>
+
+</LinearLayout>

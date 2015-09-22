@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/share_pub_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/share_list_bottom"
+        android:clipToPadding="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_10" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/share_pub_edit_padding"
+                android:text="@string/share_pub_edit_title" />
+
+            <EditText
+                android:id="@+id/share_pub_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/share_pub_edit_padding"
+                android:maxLines="2"
+                android:text="商品名称" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/share_pub_margin_top"
+                android:padding="@dimen/share_pub_edit_padding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/share_pub_edit_price" />
+
+                <TextView
+                    android:id="@+id/share_pub_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/goods_detail_price"
+                    android:text="￥699.00" />
+            </RelativeLayout>
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/share_pub_edit_padding"
+                android:text="@string/share_pub_edit_show_pic" />
+            
+            <android.support.v7.widget.RecyclerView 
+                android:id="@+id/share_pub_edit_pics"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"/>
+            
+            <EditText
+                android:id="@+id/share_edit_reason"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/share_pub_margin_top"
+                android:background="@color/white"
+                android:padding="@dimen/space_15"
+                android:textSize="@dimen/text_size_12"
+                android:ems="10"
+                android:hint="@string/share_pub_edit_recommend_hint" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/share_list_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/comment_divider" />
+
+        <Button
+            android:id="@+id/share_edit_pubBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@color/red"
+            android:padding="10dp"
+            android:text="@string/share_pub_edit_publish"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</RelativeLayout>

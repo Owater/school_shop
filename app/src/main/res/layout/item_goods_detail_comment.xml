@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+
+        <com.siso.app.widget.CircleImageView
+            android:id="@+id/item_goods_detail_img"
+            android:layout_width="@dimen/small_avatar"
+            android:layout_height="@dimen/small_avatar"
+            android:src="@drawable/ic_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="1dp" >
+
+            <TextView
+                android:id="@+id/item_goods_detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="用户名称"
+                android:textColor="@color/text_light_gray" />
+
+            <TextView
+                android:id="@+id/item_goods_detail_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="4-07"
+                android:textSize="@dimen/text_size_10" />
+        </RelativeLayout>
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/item_goods_detail_comm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="评论" />
+    </LinearLayout>
+
+</LinearLayout>

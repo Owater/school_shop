@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.siso.app.ui.UserDetailActivity" >
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="17dp" >
+
+            <FrameLayout
+                android:id="@+id/userBackgroundLayout"
+                android:layout_width="match_parent"
+                android:layout_height="188dp" >
+
+                <ImageView
+                    android:id="@+id/userBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@color/statusbar_bg" />
+
+                <include layout="@layout/toolbar"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_sharow"
+                android:layout_width="87dp"
+                android:layout_height="87dp"
+                android:layout_alignBottom="@id/userBackgroundLayout"
+                android:layout_marginBottom="-27dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/user_detail_sharow" >
+
+                <com.siso.app.widget.CircleImageView
+                    android:id="@+id/user_detail_avatar"
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_avatar" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/user_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userBackgroundLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="44dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_black_content"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/user_detail_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@id/user_detail_name"
+                android:src="@drawable/ic_sex_boy" />
+        </RelativeLayout>
+        
+        <include layout="@layout/divide_15_top_bottom" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userdetail_school_text"
+                android:textColor="@color/link_text_material_dark"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/userdetail_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="未填写"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_15_top_bottom" />
+
+        <LinearLayout
+            android:id="@+id/userdetail_goods"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" >
+
+            <View
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/user_home_project" />
+
+            <TextView
+                android:id="@+id/userdetail_goods_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/userdetail_goods"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/user_home_arrow"
+                tools:showIn="@layout/activity_user_detail" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/userdetail_share"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:background="@drawable/list_item_selector" >
+
+            <View
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_tab_share" />
+
+            <TextView
+                android:id="@+id/userdetail_share_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/userdetail_share"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/user_home_arrow"
+                tools:showIn="@layout/activity_user_detail" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/userdetail_find"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" >
+
+            <View
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_tab_find" />
+
+            <TextView
+                android:id="@+id/userdetail_find_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/userdetail_find"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/user_home_arrow"
+                tools:showIn="@layout/activity_user_detail" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/userdetail_like"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/list_item_selector"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" >
+
+            <View
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_tab_like" />
+
+            <TextView
+                android:id="@+id/userdetail_like_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/userdetail_like"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/user_home_arrow"
+                tools:showIn="@layout/activity_user_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

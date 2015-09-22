@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/ic_launcher"/>
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:interpolator="@android:anim/linear_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="360" >
+            <bitmap
+                android:antialias="true"
+                android:filter="true"
+                android:src="@drawable/common_loading_outer" />
+        </rotate>
+    </item>
+
+</layer-list>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_45"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/item_custom_dialog_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_45"
+        android:text="@string/choose_camera"
+        android:textColor="@color/choose_title_text_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/choose_dialog_padding_left"
+        android:background="@drawable/choose_camera_dialog_bg"
+        android:textSize="18dp" />
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siso.app.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 调用摄像头 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 百度地图 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!--友盟统计-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="557d356367e58ef6d9007f22" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel" />
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="owater#owaterschool" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FzojQjNDG08DgQqg9N2ryrGa" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- 友盟自动更新 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!--#END 友盟自动更新-->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".MarketFragment"-->
+            <!--android:label="@string/title_activity_market_fragment" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".MarketListFragment"-->
+            <!--android:label="@string/title_activity_market_list_fragment" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".MarketPubActivity"
+            android:label="@string/title_activity_market_pub"
+            android:theme="@style/anim_insert" >
+        </activity>
+        <activity
+            android:name=".ImageFileActivity"
+            android:label="@string/title_activity_image_file" >
+        </activity>
+        <activity
+            android:name=".ShowFilePhotoActivity"
+            android:label="@string/title_activity_show_file_photo" >
+        </activity>
+        <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".GoodsDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_goods_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ChooseSchoolActivity"
+            android:label="@string/title_activity_choose_school" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserDetailActivity"
+            android:label="@string/title_activity_user_detail"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".SettingFragment"-->
+            <!--android:label="@string/title_activity_setting_fragment" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".UserReplyActivity"
+            android:label="@string/title_activity_user_reply" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".UserMsgFragment"-->
+            <!--android:label="@string/title_activity_user_msg_fragment" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".AccountSetting"
+            android:label="@string/title_activity_account_setting" >
+        </activity>
+        <activity
+            android:name=".SetPasswordActivity"
+            android:label="@string/title_activity_set_password" >
+        </activity>
+        <activity
+            android:name=".UserDetailEditActivity"
+            android:label="@string/title_activity_user_detail_edit" >
+        </activity>
+        <activity
+            android:name=".SetUserInfoActivity"
+            android:label="@string/title_activity_set_user_info" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".ShareListFragment"-->
+            <!--android:label="@string/title_activity_share_list_fragment" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".SharePubActivity"
+            android:label="@string/title_activity_share_pub" >
+        </activity>
+        <activity
+            android:name=".photopick.PhotoPickActivity"
+            android:label="@string/title_activity_photo_pick" >
+        </activity>
+        <activity
+            android:name=".MarkActivity"
+            android:label="@string/title_activity_mark" >
+        </activity>
+        <activity
+            android:name=".MarkSubmitActivity"
+            android:label="@string/title_activity_mark_submit" >
+        </activity>
+        <activity
+            android:name=".FindDetailActivity"
+            android:label="@string/title_activity_find_detail" >
+        </activity>
+        <activity
+            android:name=".ShareDetailActivity"
+            android:label="@string/title_activity_share_detail" >
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".login.RegisterActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- Chat -->
+        <!-- 登陆 -->
+        <activity
+            android:name="com.siso.app.chat.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+
+
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.siso.app.chat.ui.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.siso.app.chat.ui.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+
+        <!-- 自定义的contextmenu -->
+        <activity
+            android:name="com.siso.app.chat.ui.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="com.siso.app.chat.ui.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <activity
+            android:name="com.siso.app.chat.ui.ChatAllHistoryActivity"
+            android:label="@string/title_activity_chat_all_history"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- #Chat END -->
+        <activity
+            android:name=".UserPubGoodsActivity"
+            android:label="@string/title_activity_user_pub_goods" >
+        </activity>
+        <activity
+            android:name=".SearchGoodsActivity"
+            android:label="@string/title_activity_search_goods" >
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+    </application>
+
+</manifest>
