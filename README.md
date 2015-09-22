@@ -1,9 +1,15 @@
 # school_shop
-校园购物
+校园易购，本人于2015年4,5月份开发，后因产品策划的太臃肿，存在一定bug，并在忙其它事，没空修复，
+现在将其开源，供大家参考学习
+
+- 注：后台采用SpringMvc开发(Maven)，部署在[Openshift](https://www.openshift.com/)服务器，由于是国外免费服务器，所以响应速度比较慢
 
 # Screenshots
 ![Main screen](/screenshots/main.png)
-![Main screen](/screenshots/main_menu.png)
+![Main menu](/screenshots/main_menu.png)
+![Market chat](/screenshots/market_chat.png)
+![Market publish](/screenshots/market_publish.png)
+![Message](/screenshots/message.jpg)
 
 # Third-party libraries used
 
